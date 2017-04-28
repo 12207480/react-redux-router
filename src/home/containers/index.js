@@ -14,7 +14,7 @@ class Main extends Component {
       },{
         bannerUrl: 'image/home/3.jpg'
       }
-    ]
+    ];
   }
   btnClick1 =()=> {
     window.location.href = '#/demo1';

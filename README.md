@@ -1,10 +1,10 @@
-###一个完成的react项目
+### 一个完成的react项目
 [github地址](https://github.com/ToNiQian/react-redux-router)
 [demo地址](http://toniqian.com)(请调成手机模式观看)
 ***
-####技术栈: webpack + react + react-router + redux + sass  + es6
+#### 技术栈: webpack + react + react-router + redux + sass  + es6
 
-###1.下载
+### 1.下载
 ```
 git clone git@github.com:toniqian/react-redux-router.git
 cd react-redux-router
@@ -12,18 +12,18 @@ npm install (安装依赖模块)
 npm install webpack -g (没有安装webpack的需要安装)
 ```
 ***
-###2.运行
-#####开发环境
+### 2.运行
+##### 开发环境
 ```
 npm run vendor (提取公共js)
 npm run start(启动服务)
 ```
-#####生产环境
+##### 生产环境
 ```
 npm run prod
 ```
 ***
-###3.文件目录
+### 3.文件目录
 
 ![](http://upload-images.jianshu.io/upload_images/2701853-81e7d6ad06283a85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -37,7 +37,7 @@ npm run prod
 8.webpack.prod.config.js 生产环境的配置
 9.webpack.prod.dll.config.js 提取生产环境的公共js
 ****
-###4.项目目录
+### 4.项目目录
 ![](http://upload-images.jianshu.io/upload_images/2701853-fba3b490f24c6caa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
 1.action 组件改变状态的行为
@@ -53,7 +53,7 @@ npm run prod
 11.index.js 应用入口文件
 ```
 ***
-###5.命名规范
+### 5.命名规范
 #####整个项目以模块为单位
 比如建立一个帮助中心模块,取名为help
 (1)image存在help模块,公共icon放入icon目录
@@ -74,7 +74,7 @@ variable为项目变量
 ![](http://upload-images.jianshu.io/upload_images/2701853-aea763ed1ae1f180.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ***
 
-###6.项目功能
+### 6.项目功能
 
 **项目是一个spa应用,包括首页,还有2个案例页,一个是表单验证页,
 一个图片懒加载页,利用路由进行页面跳转,通过webpack做了按需加载,
@@ -93,7 +93,7 @@ variable为项目变量
 **图片懒加载,是image组件,建议所有的图片采用image组件**
 ![图片懒加载](http://upload-images.jianshu.io/upload_images/2701853-421a0a0141b0b7f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ***
-###7.代码分析
+### 7.代码分析
 ```
 我把页面分为4种情况,分别编写了4个逻辑组件
 1.页面无数据,静态页面 使用GetPage组件
@@ -107,7 +107,7 @@ variable为项目变量
 ```
 ![](http://upload-images.jianshu.io/upload_images/2701853-97c4980846b5fd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###8.总结
+### 8.总结
 ```
 1.开发spa应用,利用webpack进行了按需加载,大大提高了页面的性能
 2.使用逻辑组件,页面根据对应的需求采用对应的逻辑组件,

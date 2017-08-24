@@ -44,16 +44,16 @@ npm run prod
 ![](http://upload-images.jianshu.io/upload_images/2701853-fba3b490f24c6caa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > - action 组件改变状态的行为 
-- components 公共组件库
-- containers 首页
-- image 图片库
-- lib 公共js库
-- reducers reducer库
-- router 路由的汇总
-- routers 每个单独的页面,包含页面的路由配置
-- scss 样式库
-- index.html 开发环境页面模板
-- index.js 应用入口文件
+> - components 公共组件库
+> - containers 首页
+> - image 图片库
+> - lib 公共js库
+> - reducers reducer库
+> - router 路由的汇总
+> - routers 每个单独的页面,包含页面的路由配置
+> - scss 样式库
+> - index.html 开发环境页面模板
+> - index.js 应用入口文件
 
 ***
 ### 5.命名规范
@@ -67,24 +67,24 @@ npm run prod
 
 ***
 
-**(2)reducers 存在help模块,reducer里面写help模块下的页面reducer,
+**(2)reducers 存在help模块,reducer里面写help模块下的页面reducer,**
 index.js把help模块下reducer统一汇总**
 ![](http://upload-images.jianshu.io/upload_images/2701853-3c69a26c833d732b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
 
-**(3)routers 存在help模块,demo1,demo2为help模块下面的页面,
-index.js把help模块下面的路由统一汇总**
+**(3)routers 存在help模块,demo1,demo2为help模块下面的页面,**
+**index.js把help模块下面的路由统一汇总**
 ![](http://upload-images.jianshu.io/upload_images/2701853-b6beb7014477c278.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ***
 
-> (4)scss下面index.scss汇总项目的scss
-> animate为动画样式,common为公共样式,
-> component为组件样式
-> icon为图标样式,page为每个页面的样式汇总,
-> reset为重置样式,
-> variable为项目变量
+**(4)scss下面index.scss汇总项目的scss**
+**animate为动画样式,common为公共样式,**
+**component为组件样式**
+**icon为图标样式,page为每个页面的样式汇总,**
+**reset为重置样式,**
+**variable为项目变量**
 
 ![](http://upload-images.jianshu.io/upload_images/2701853-aea763ed1ae1f180.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -126,9 +126,13 @@ index.js把help模块下面的路由统一汇总**
 ### 7.代码分析
 
 > 我把页面分为4种情况,分别编写了4个逻辑组件
+
 > 1.页面无数据,静态页面 使用GetPage组件
+
 > 2.页面有数据,需要渲染页面的, 使用GetData组件
+
 > 3.页面是表单页面,使用GetInput组件
+
 > 4.页面为需要翻页的列表页,使用GetNextPage组件
 
 **注:逻辑组件内部会与redux关联,然后会把一些公共组件,**
@@ -139,7 +143,8 @@ index.js把help模块下面的路由统一汇总**
 ![](http://upload-images.jianshu.io/upload_images/2701853-97c4980846b5fd92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 8.总结
->1.开发spa应用,利用webpack进行了按需加载,大大提高了页面的性能
+
+> 1.开发spa应用,利用webpack进行了按需加载,大大提高了页面的性能
 > 2.使用逻辑组件,页面根据对应的需求采用对应的逻辑组件,
 大大提高了页面的开发效率,方便进行统一管理
 > 3.采用redux进行页面的状态管理,把每个页面具备的公共状态抽离出来,
